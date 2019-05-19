@@ -16,7 +16,7 @@ export default class BuyOrderDetailsCell extends Component{
 		return (
 			 
 			<td>
-			<Tooltip anchorElement="target" position="top">
+			<Tooltip anchorElement="target" position="top" style={{position : 'absolute'}}>
 				<a
 					title={this.props.dataItem.buyOrderDetails}
 					href="#"

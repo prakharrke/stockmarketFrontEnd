@@ -46,7 +46,7 @@ export default class Routes extends Component{
 	}
 
 	authenticateUser(){
-		alert('here')
+		
 		this.setState({
 			...this.state,
 			isAuthenticated : true

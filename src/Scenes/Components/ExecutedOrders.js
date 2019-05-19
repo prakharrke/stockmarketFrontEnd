@@ -65,6 +65,7 @@ export default class ExecutedOrders extends Component {
 				{loadingComponent}
 				<Grid
 					data={this.state.executedOrders}
+					style={{height : 5*window.innerHeight/12}}
 				>
 					<Column
 						field="buyOrderID"

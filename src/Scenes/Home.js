@@ -107,10 +107,10 @@ export default class Home extends Component {
 	render() {
 
 		return (
-			<div>
-			<div className=" fixed-top" style={{height : '50%', position: 'absolute', overflowY : 'scroll', overflowX : 'hidden'}}>
-				<div className="row" >
-				<div className="col-lg-8">
+			<div >
+				<div>
+				<div className="row" style={{height:'100%'}}>
+				<div className="col-lg-8" style={{height:'100%'}}>
 					<TabStrip selected={this.state.selected} onSelect={this.handleSelect.bind(this)}>
 
 					<TabStripTab title="Placed Orders">
@@ -165,9 +165,10 @@ export default class Home extends Component {
 						<input type="button" className="k-button k-primary" value="Place" onClick={this.placeOrder.bind(this)} />
 					</form>
 				</div>
+				</div>
 			</div>
-			</div>
-			<div className = 'fixed-bottom' style={{position: 'absolute' , height : '50%', overflowY : 'scroll', padding : '3em'}}>
+			
+			<div  className="fixed-bottom" style={{ height : '40%', overflowY : 'scroll', padding : '2em'}}>
 				
 					<Charts userName = {this.state.userName}/>
 				

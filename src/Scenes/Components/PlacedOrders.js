@@ -57,7 +57,7 @@ export default class PlacedOrders extends Component{
 		<Grid
 			data={this.state.placedOrders}
 			height={"100%"}
-			style={{height : '100%'}}
+			style={{height : 5*window.innerHeight/12}}
 		>
 			<Column 
 				field = "orderID"
